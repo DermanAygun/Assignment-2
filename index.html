@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.Design-06</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav start -->
+    <nav class="headernav" style="background-image: url('navheader.jpg'); height: 600px; width: 100%;">
+        <ul class="headernav__list" style="list-style-type: none">
+            <li class="headernav__image--firstimage"><img src="" alt="">test</li>
+            <li class="headernav__link"><a href="#">Spa</a></li>
+            <li class="headernav__link">~</li>
+            <li class="headernav__link"><a href="#">Reservations</a></li>
+            <li class="headernav__link">~</li>
+            <li class="headernav__link"><a href="#">Locations</a></li>
+            <li class="headernav__link">~</li>
+            <li class="headernav__link"><a href="#">Dining</a></li>
+            <li class="headernav__image--secondimage"><img src="" alt="">test</li>
+        </ul>
+    </nav>
+
+    <!-- Main Body start -->
+    <section id="mainbodygrid">
+        <div class="mainbodygrid__box_a"><span class="mainbodygrid__text" style="position: relative; top: 100px;">HOME AWAY FROM HOME<br><br>dolor amet sit dolor amet<br>dolor amet sit dolor amet<br>dolor amet sit dolor amet</span><br><br><button class="mainbodygrid__button" style="height: 25px; width: 150px; position: relative; top: 150px; left: 5%;">Make Reservations</button></div>
+        <div class="mainbodygrid__box_b"></div>
+        <div class="mainbodygrid__box_c"></div>
+        <div class="mainbodygrid__box_d"></div>
+        <div class="mainbodygrid__box_e"></div>
+        <div class="mainbodygrid__box_f"></div>
+        <div class="mainbodygrid__box_g"></div>
+        <div class="mainbodygrid__box_h"></div>
+    </section>
+
+    <div class="mainbody" style="background-color: burlywood; width: 100%; height: 700px; background-repeat: no-repeat; margin-top: 49%;">
+        <hr class="mainbody__menuhr" width="25px;" color="black"><br>
+        <p class="mainbody__menutitle">OUR MENU</p>
+    </div>
+
+    <section id="subbodygrid">
+        <div class="subbodygrid__box_a"><br>PROMEGRANATE<br>OYSTERS<br><br><br>Lorem ipsum dolor sit<br> amet consectetuer<br><br><br><a class="subbodygrid__menu--a" href="#">VIEW FULL MENU</a></div>
+        <div class="subbodygrid__box_b"></div>
+        <div class="subbodygrid__box_c"><br>PROMEGRANATE<br>OYSTERS<br><br><br>Lorem ipsum dolor sit<br> amet consectetuer<br><br><br><a class="subbodygrid__menu--a" href="#">VIEW FULL MENU</a></div>
+        <div class="subbodygrid__box_d"></div>
+        <!-- -->
+        <div class="subbodygrid__box_aa"></div>
+        <div class="subbodygrid__box_bb"><br>PROMEGRANATE<br>OYSTERS<br><br><br>Lorem ipsum dolor sit<br> amet consectetuer<br><br><br><a class="subbodygrid__menu--a" href="#">VIEW FULL MENU</a></div>
+        <div class="subbodygrid__box_cc"></div>
+        <div class="subbodygrid__box_dd"><br>PROMEGRANATE<br>OYSTERS<br><br><br>Lorem ipsum dolor sit<br> amet consectetuer<br><br><br><a class="subbodygrid__menu--a" href="#">VIEW FULL MENU</a></div>
+        <!-- -->
+        <div class="subbodygrid__box_aaa"><br>PROMEGRANATE<br>OYSTERS<br><br><br>Lorem ipsum dolor sit<br> amet consectetuer<br><br><br><a class="subbodygrid__menu--a" href="#">VIEW FULL MENU</a></div>
+        <div class="subbodygrid__box_bbb"></div>
+        <div class="subbodygrid__box_ccc"><br>PROMEGRANATE<br>OYSTERS<br><br><br>Lorem ipsum dolor sit<br> amet consectetuer<br><br><br><a class="subbodygrid__menu--a" href="#">VIEW FULL MENU</a></div>
+        <div class="subbodygrid__box_ddd"></div>
+    </section>
+
+
+    <!-- The four imagecolumns start -->
+    <div class="imagecolumnrow">
+        <div class="imagecolumnrow__imagecolumntitle" style="text-align:center">
+            <h2 class="imagecolumnrow__title">Resort Amenities</h2><br>
+            <p class="imagecolumnrow__text">Lorem ipsum dolor sit amet consectetuer<br>dolor amet sit dolor amet consectetuer<br>ipsum dolor sit amet consectetuer</p>
+        </div>
+        <div class="imagecolumnrow__column">
+            <img src="test2.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="imagecolumnrow__column">
+            <img src="test3.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="imagecolumnrow__column">
+            <img src="test4.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="imagecolumnrow__column">
+            <img src="test5.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <img id="imagecolumnrow__expandedimg" style="width:62%; margin-left: 6%;">
+    </div>
+
+    <script>
+        function myFunction(columnimg) {
+            var expandimg = document.getElementById("imagecolumnrow__expandedimg");
+            expandimg.src = columnimg.src;
+            expandimg.parentElement.style.display = "block";
+        }
+    </script>
+
+
+</body>
+</html>

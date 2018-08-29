@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+}
+a { color: inherit; text-decoration: inherit;}
+
+/*   Nav start   */
+.headernav{
+
+}
+.headernav__list{
+    color: white;
+    padding-left: 30%;
+    margin-left: 8.5%;
+}
+.headernav__link{
+    float: left;
+    margin-left: 1.5%;
+    margin-top: 5%;
+}
+.headernav__image--firstimage {
+    margin-left: -15%;
+    float: left;
+    margin-top: 5%;
+    color: white;
+}
+.headernav__image--secondimage{
+    margin-left: 15%;
+    float:left;
+    margin-top: 5%;
+}
+
+/*  Main Body start  */
+.mainbody{
+    margin-top: 650px;
+    position: relative;
+    z-index: 1;
+}
+.mainbody__menutitle{
+    margin-left: 46.5%;
+}
+.mainbody__menuhr{
+    margin-top: 25%;
+    margin-left: 48.2%;
+}
+/* Top Grid start */
+#mainbodygrid {
+    margin-top: 11%;
+    margin-left: 21%;
+    display: grid;
+    grid-gap: 10px;
+    width: 79%;
+    height: 758px;
+    grid-template-areas:
+            "box_a  box_a  box_c  box_c  box_c  box_c  box_c"
+            "box_b  box_b  box_c  box_c  box_c  box_c  box_c"
+            "box_b  box_b  box_d  box_e  box_f  box_g  box_h";
+    grid-template-columns: 24%;
+    position: absolute;
+    z-index: 2;
+}
+#mainbodygrid > .mainbodygrid__box_a{
+    grid-area: box_a;
+    padding-bottom: 26%;
+}
+#mainbodygrid > .mainbodygrid__box_b{
+    grid-area: box_b;
+    background-color: lightgrey;
+    background-size: 377px 285px;
+    background-repeat: no-repeat;
+}
+#mainbodygrid > .mainbodygrid__box_c{
+    grid-area: box_c;
+    background-color: lightgrey;
+    background-size: 629px 475px;
+}
+#mainbodygrid > .mainbodygrid__box_d{
+    grid-area: box_d;
+    background-color: lightgrey;
+    background-size: 158px 165px;
+}
+#mainbodygrid > .mainbodygrid__box_e{
+    grid-area: box_e;
+    background-color: lightgrey;
+    background-size: 158px 165px;
+}
+#mainbodygrid > .mainbodygrid__box_f{
+    grid-area: box_f;
+    background-color: lightgrey;
+    background-size: 158px 165px;
+}
+#mainbodygrid > .mainbodygrid__box_g{
+    grid-area: box_g;
+    background-color: lightgrey;
+    background-size: 158px 165px;
+}
+#mainbodygrid > .mainbodygrid__box_h{
+    grid-area: box_h;
+    background-color: lightgrey;
+    background-size: 158px 165px;
+}
+
+/* Bottom Grid start */
+#subbodygrid {
+    margin-top: -10%;
+    margin-left: 17%;
+    display: grid;
+    width: 64%;
+    height: 600px;
+    grid-template-areas:
+            "box_a  box_b  box_c  box_d"
+            "box_aa  box_bb  box_cc  box_dd"
+            "box_aaa  box_bbb  box_ccc  box_ddd";
+    grid-template-columns: 25%;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+.subbodygrid__menu--a{
+    text-decoration: underline;
+    color: burlywood;
+}
+
+/* first row of sub grid */
+#subbodygrid > .subbodygrid__box_a{
+    grid-area: box_a;
+    background-color: white;
+    background-size: 50px 50px;
+}
+#subbodygrid > .subbodygrid__box_b{
+    grid-area: box_b;
+    background-image: url('oysters.jpg');
+    background-size: 243.08px 200px;
+}
+#subbodygrid > .subbodygrid__box_c{
+    grid-area: box_c;
+    background-color: white;
+    background-size: 50px 50px;
+}
+#subbodygrid > .subbodygrid__box_d{
+    grid-area: box_d;
+    background-image: url('oysters.jpg');
+    background-size: 243.08px 200px;
+}
+/* second row of sub grid */
+#subbodygrid > .subbodygrid__box_aa{
+    grid-area: box_aa;
+    background-image: url('oysters.jpg');
+    background-size: 243.08px 200px;
+}
+#subbodygrid > .subbodygrid__box_bb{
+    grid-area: box_bb;
+    background-color: white;
+    background-size: 50px 50px;
+}
+#subbodygrid > .subbodygrid__box_cc{
+    grid-area: box_cc;
+    background-image: url('oysters.jpg');
+    background-size: 243.08px 200px;
+}
+#subbodygrid > .subbodygrid__box_dd{
+    grid-area: box_dd;
+    background-color: white;
+    background-size: 50px 50px;
+}
+/* third row of sub grid */
+#subbodygrid > .subbodygrid__box_aaa{
+    grid-area: box_aaa;
+    background-color: white;
+    background-size: 50px 50px;
+}
+#subbodygrid > .subbodygrid__box_bbb{
+    grid-area: box_bbb;
+    background-image: url('oysters.jpg');
+    background-size: 243.08px 200px;
+}
+#subbodygrid > .subbodygrid__box_ccc{
+    grid-area: box_ccc;
+    background-color: white;
+    background-size: 50px 50px;
+}
+#subbodygrid > .subbodygrid__box_ddd{
+    grid-area: box_ddd;
+    background-image: url('oysters.jpg');
+    background-size: 243.08px 200px;
+}
+
+/* Gallery start */
+
+/* The grid: Four equal columns that floats next to each other */
+/* The grid: Four equal columns that floats next to each other */
+.imagecolumnrow__column {
+    float: left;
+    width: 8%;
+    margin-top: 20%;
+}
+
+/* Style the images inside the grid */
+.imagecolumnrow__column img {
+    opacity: 0.8;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 1s;
+}
+
+.imagecolumnrow__column img:hover {
+    opacity: 1;
+    box-shadow: 3px 3px 3px 3px lightgrey;
+    transform: scale(1.1);
+}
+
+/* Clear floats after the columns */
+.imagecolumnrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.imagecolumnrow{
+    margin-top: 40%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.imagecolumnrow__imagecolumntitle{
+    position: relative;
+    top: 150px;
+    margin-left: -70%;
+}
